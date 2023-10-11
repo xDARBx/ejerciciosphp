@@ -10,4 +10,4 @@ antiguedad = Number(antiguedad)
 
 var sueldo = valorh * horast
 var sueldob = (sueldo * 15)/100 * antiguedad
-console.log("Usted va a cobrar un sueldo de: $" + (sueldo + sueldob))
+alert("Usted va a cobrar un sueldo de: $" + (sueldo + sueldob))
