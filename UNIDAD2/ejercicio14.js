@@ -41,9 +41,7 @@ var bonoSegurosVendidos = sueldoBase * (segurosVendidos * 0.25);
 var bonoAntiguedad = sueldoBase * (aniosAntiguedad * 0.15);
 
 var sueldoFinal = sueldoBase + bonoSeguro + bonoSegurosVendidos + bonoAntiguedad;
-var valorPromedioHora = sueldoFinal / horasTrabajadas;
-
-
-// SUMO MÉTODO PARA MOSTRAR DOS DIGITOS DECIMALES EN LOS NUMEROS
 alert(`El sueldo mensual del empleado es: $${sueldoFinal.toFixed(2)}`);
+// SUMO MÉTODO PARA MOSTRAR DOS DIGITOS DECIMALES EN LOS NUMEROS
+var valorPromedioHora = sueldoFinal / horasTrabajadas;
 alert(`El valor promedio de la hora del empleado es: $${valorPromedioHora.toFixed(2)}`);
