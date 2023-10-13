@@ -7,13 +7,45 @@
 <body>
    EJERCICIOS GRUPO 4
 
-   <h1>Ejemplo 1</h1>
-    <script src="archivo12.js"></script>
+   <h1>Ejemplo 12</h1>
+    <script>
+        const valorHora = Number(prompt("Ingrese el valor de su hora laboral"));
+        const horasTrabajadas = Number(prompt("Ingrese la cantidad de horas trabajadas"));
+        const sueldo = valorHora * horasTrabajadas;
+        alert("Usted cobrará un sueldo de: $" + sueldo + " este mes");
+    </script>
 
-    <h1>Ejemplo 2</h1>
-    <script src="archivo13.js"></script>
+    <h1>Ejemplo 13</h1>
+    <script>
+        const valorHora2 = Number(prompt("Ingrese el valor de la hora trabajada:"));
+        var horasTrabajadas2 = Number(prompt("Ingrese la cantidad de horas trabajadas:"));
+        var antiguedad = Number(prompt("Ingrese su antigüedad laboral:"));
 
-    <h1>Ejemplo 3</h1>
-    <script src="archivo14.js"></script>
+        const sueldo2 = valorHora * horasTrabajadas;
+        var sueldoBono = (sueldo2 * 15) / 100 * antiguedad;
+        var sueldoTotal = sueldo2 + sueldoBono;
+
+        alert("Usted va a cobrar un sueldo de: $" + sueldoTotal);
+    </script>
+
+    <h1>Ejemplo 14</h1>
+    <script>
+
+        const valorHora3 = Number(prompt("Ingrese el valor de la hora:"));
+        var horasTrabajadas3 = Number(prompt("Ingrese la cantidad de horas trabajadas en el mes:"));
+        var aniosAntiguedad = Number(prompt("Ingrese los años de antigüedad:"));
+        var segurosVendidos = Number(prompt("Ingrese la cantidad de seguros vendidos:"));
+        const seguroMasCaro = Number(prompt("Ingrese el valor del seguro más caro vendido:"));
+        const sueldoBase = valorHora3 * horasTrabajadas;
+        const bonoSeguro = (seguroMasCaro * 0.5);
+        var bonoSegurosVendidos = sueldoBase * (segurosVendidos * 0.25);
+        var bonoAntiguedad = sueldoBase * (aniosAntiguedad * 0.15);
+
+        var sueldoFinal = sueldoBase + bonoSeguro + bonoSegurosVendidos + bonoAntiguedad;
+        alert(`El sueldo mensual del empleado es: $${sueldoFinal.toFixed(2)}`);
+        var valorPromedioHora = sueldoFinal / horasTrabajadas3;
+        alert(`El valor promedio de la hora del empleado es: $${valorPromedioHora.toFixed(2)}`);
+
+    </script>
 </body>
 </html>
