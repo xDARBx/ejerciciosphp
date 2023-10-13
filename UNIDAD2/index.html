@@ -5,9 +5,21 @@
     
 </head>
 <body>
-   EJERCICIOS GRUPO 4
+    <h1> EJERCICIOS GRUPO 4</h1>
 
-   <h1>Ejemplo 12</h1>
+    <ul>
+        <p>Integrantes: </p> 
+        <ol>
+            Antonini, Carla
+            Bellido, Luciano
+            Guzmán, Paola
+            Morel, Dalia
+            Rocha Bartaburu, Daniel Alberto 
+        </ol>
+    </ul>
+  
+
+   <h2>Ejemplo 12</h2>
     <script>
         const valorHora = Number(prompt("Ingrese el valor de su hora laboral"));
         const horasTrabajadas = Number(prompt("Ingrese la cantidad de horas trabajadas"));
@@ -15,7 +27,7 @@
         alert("Usted cobrará un sueldo de: $" + sueldo + " este mes");
     </script>
 
-    <h1>Ejemplo 13</h1>
+    <h2>Ejemplo 13</h2>
     <script>
         const valorHora2 = Number(prompt("Ingrese el valor de la hora trabajada:"));
         var horasTrabajadas2 = Number(prompt("Ingrese la cantidad de horas trabajadas:"));
@@ -28,7 +40,7 @@
         alert("Usted va a cobrar un sueldo de: $" + sueldoTotal);
     </script>
 
-    <h1>Ejemplo 14</h1>
+    <h2>Ejemplo 14</h2>
     <script>
 
         const valorHora3 = Number(prompt("Ingrese el valor de la hora:"));
@@ -45,6 +57,19 @@
         alert(`El sueldo mensual del empleado es: $${sueldoFinal.toFixed(2)}`);
         var valorPromedioHora = sueldoFinal / horasTrabajadas3;
         alert(`El valor promedio de la hora del empleado es: $${valorPromedioHora.toFixed(2)}`);
+
+    </script>
+    <h2>Ejemplo 14</h2>
+    <script>
+        let n1 = Number(prompt("Ingrese el primer número:"));
+        let n2 = Number(prompt("Ingrese el segundo número:"));
+        let n3 = Number(prompt("Ingrese el tercer número:"));
+        let n4 = Number(prompt("Ingrese el cuarto número:"));
+
+        let calcular = n1 + n2 + n3 + n4;
+        let promedio = calcular / 4;
+
+        alert("La sumatoria de los números es de: " + calcular + " y el promedio es de: " + promedio);
 
     </script>
 </body>
