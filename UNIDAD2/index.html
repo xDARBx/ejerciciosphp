@@ -9,13 +9,11 @@
 
     <ul>
         <p>Integrantes: </p> 
-        <ol>
-            Antonini, Carla
-            Bellido, Luciano
-            Guzmán, Paola
-            Morel, Dalia
-            Rocha Bartaburu, Daniel Alberto 
-        </ol>
+            <ol>Antonini, Carla</ol>
+            <ol>Bellido, Luciano</ol>
+            <ol>Guzmán, Paola</ol>
+            <ol>Morel, Daola</ol>
+            <ol>Rocha Bartaburu, Daniel Alberto </ol>        
     </ul>
     <h2>Ejemplo 09</h2>
     <script>
@@ -81,15 +79,30 @@
         var aniosAntiguedad = Number(prompt("Ingrese los años de antigüedad:"));
         var segurosVendidos = Number(prompt("Ingrese la cantidad de seguros vendidos:"));
         const seguroMasCaro = Number(prompt("Ingrese el valor del seguro más caro vendido:"));
-        const sueldoBase = valorHora3 * horasTrabajadas;
+        const sueldoBase = valorHora3 * horasTrabajadas3;
         const bonoSeguro = (seguroMasCaro * 0.5);
         var bonoSegurosVendidos = sueldoBase * (segurosVendidos * 0.25);
         var bonoAntiguedad = sueldoBase * (aniosAntiguedad * 0.15);
 
         var sueldoFinal = sueldoBase + bonoSeguro + bonoSegurosVendidos + bonoAntiguedad;
-        alert(`El sueldo mensual del empleado es: $${sueldoFinal.toFixed(2)}`);
+   //     alert(`El sueldo mensual del empleado es: $${sueldoFinal.toFixed(2)}`);
         var valorPromedioHora = sueldoFinal / horasTrabajadas3;
-        alert(`El valor promedio de la hora del empleado es: $${valorPromedioHora.toFixed(2)}`);
+    //    alert(`El valor promedio de la hora del empleado es: $${valorPromedioHora.toFixed(2)}`);
+
+
+    alert("El valores ingresados son:  \n" +
+    "el valor hora es: " + valorHora3.toFixed(2) + "\n" +
+    "la cantidad de horas es: " + horasTrabajadas3 + "\n" +
+    "la antiguedad es : " + aniosAntiguedad + "\n" +
+    "la cantidad de seguros vendidos es: " + segurosVendidos + "\n" +
+    "el valor del seguro mas caro es: " + seguroMasCaro.toFixed(2) + "\n" +
+
+    "la bonificacion 1 es : " + bonoSeguro.toFixed(2) + "\n" +
+    "la bonificacion 2 es : " + bonoSegurosVendidos.toFixed(2) + "\n" +
+    "la bonificacion 3 es : " + bonoAntiguedad.toFixed(2) + "\n" +
+    "el valor promedio de la hora trabajada es : " + valorPromedioHora.toFixed(2) + "\n" +
+    "el sueldo devaluado con la bonificació es: " + sueldoFinal.toFixed(2) + "  \n");
+
     </script>
 </body>
 </html>
