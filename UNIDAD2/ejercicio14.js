@@ -45,3 +45,28 @@ alert(`El sueldo mensual del empleado es: $${sueldoFinal.toFixed(2)}`);
 // SUMO MÉTODO PARA MOSTRAR DOS DIGITOS DECIMALES EN LOS NUMEROS
 var valorPromedioHora = sueldoFinal / horasTrabajadas;
 alert(`El valor promedio de la hora del empleado es: $${valorPromedioHora.toFixed(2)}`);
+
+alert("El valores ingresados son:  \n" +
+    "el valor hora es: " + valorHora.toFixed(2) + "\n" +
+    "la cantidad de horas es: " + horasTrabajadas + "\n" +
+    "la antiguedad es : " + aniosAntiguedad + "\n" +
+    "la cantidad de seguros vendidos es: " + segurosVendidos + "\n" +
+    "el valor del seguro mas caro es: " + seguroMasCaro.toFixed(2) + "\n" +
+
+    "la bonificacion 1 es : " + bonoSeguro.toFixed(2) + "\n" +
+    "la bonificacion 2 es : " + bonoSegurosVendidos.toFixed(2) + "\n" +
+    "la bonificacion 3 es : " + bonoAntiguedad.toFixed(2) + "\n" +
+    "el valor promedio de la hora trabajada es : " + valorPromedioHora.toFixed(2) + "\n" +
+    "el sueldo devaluado con la bonificació es: " + sueldoFinal.toFixed(2) + "  \n");
+
+// console.log("El valores ingresados son: ");
+// console.log("el valor hora es: " + valorHora );
+// console.log("la cantidad de horas es: " + cantidadHorasTrabajadas);
+// console.log("la antiguedad es : " + antiguedad);
+// console.log("la cantidad de seguros vendidos es: " + segurosVendidos);
+// console.log("el valor del seguro mas caro es: " + valorSeguroMasCaro);
+// console.log("la bonificacion es : " + bonificacion1);
+// console.log("la bonificacion es : " + bonificacion2);
+// console.log("la bonificacion es : " + bonificacion3);
+
+// console.log("el sueldo devaluado es: " + sueldo);
