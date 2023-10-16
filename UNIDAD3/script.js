@@ -26,6 +26,21 @@ if (numero % 3 === 0) {
   alert(numero + " no es múltiplo de 3.");
 }
 
+//Ejercicio 17
+//17. Se le solicita al usuario que ingrese una letra. Realice el algoritmo para informar si el valor ingresado es una vocal.
+
+function Vocal(letra) {
+    var letra = prompt("Ingrese una letra: ").toLowerCase();
+    
+    if ( letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+    alert("Es una vocal :D")
+   } else {
+    alert("No es una vocal :(")
+   }
+}
+
+Vocal()
+
 // -----------------------------------------------------------------------------------------------------------------------
 //Ejercicio 21
 /*21.Realizar un sistema para el cálculo de sueldo de una empresa. Se le solicita al
