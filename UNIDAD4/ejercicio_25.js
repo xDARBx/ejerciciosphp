@@ -36,10 +36,7 @@ do {
             case 2:
                 sigo = false;
                 break;
-
         }
-
-
     } else {
         alert("la opción ingresada no es un número que corresponde a una opcion válida")
     }
@@ -61,9 +58,9 @@ do {
     }
 
     alert ("Los valores ingresados fueron: " + notas +
-       "\n el porcentaje  de alumnos aprobados es: " + ((aprobados * 100)/notas.length)   +
-       "\n el porcentaje  de alumnos desaprobados es: " + ((desaprobados * 100)/notas.length)   +
-       "\n el promedio es: " + (sumatoria/notas.length)   );
+       "\n el porcentaje  de alumnos aprobados es: " + ((aprobados * 100)/notas.length).toFixed(2)   +
+       "\n el porcentaje  de alumnos desaprobados es: " + ((desaprobados * 100)/notas.length).toFixed(2)   +
+       "\n el promedio es: " + (sumatoria/notas.length).toFixed(2)   );
 
   }else{
       alert("No fueron ingresadas las notas");
