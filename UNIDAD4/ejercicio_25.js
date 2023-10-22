@@ -16,7 +16,7 @@ let sumatoria = 0.0;
 
 let dialogo = "Elija alguna de las siguientes opciones: \n\n" +
     "1- ingresar un numero entero \n" +
-    "2- terminar de ingresar y reportar máximo y mínimo";
+    "2- terminar de ingresar y reportar porcentajes y promedios";
 
 
 do {
