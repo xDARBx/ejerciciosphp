@@ -28,8 +28,8 @@ do {
                 var dato = parseFloat(prompt("Ingrese una nota: "));
                 if (!isNaN(dato)) {
                     notas.push(dato);
-                  
-                }else {
+
+                } else {
                     alert("la opción ingresada no es un número parecido a una nota")
                 }
                 break;
@@ -42,27 +42,27 @@ do {
     }
 
 
-    } while (sigo)
+} while (sigo)
 
 
-  if(notas != [] && notas.length > 0){
+if (notas != [] && notas.length > 0) {
 
-    for (i=0; i< notas.length ; i++){
-        if(notas[i] >= 4.0){
-           aprobados ++;
-           
-        }else{
-           desaprobados ++
+    for (i = 0; i < notas.length; i++) {
+        if (notas[i] >= 4.0) {
+            aprobados++;
+
+        } else {
+            desaprobados++;
         }
-        sumatoria= sumatoria + notas[i];
+        sumatoria = sumatoria + notas[i];
     }
 
-    alert ("Los valores ingresados fueron: " + notas +
-       "\n el porcentaje  de alumnos aprobados es: " + ((aprobados * 100)/notas.length).toFixed(2)   +
-       "\n el porcentaje  de alumnos desaprobados es: " + ((desaprobados * 100)/notas.length).toFixed(2)   +
-       "\n el promedio es: " + (sumatoria/notas.length).toFixed(2)   );
+    alert("Los valores ingresados fueron: " + notas +
+        "\n el porcentaje  de alumnos aprobados es: " + ((aprobados * 100) / notas.length).toFixed(2) +
+        "\n el porcentaje  de alumnos desaprobados es: " + ((desaprobados * 100) / notas.length).toFixed(2) +
+        "\n el promedio es: " + (sumatoria / notas.length).toFixed(2));
 
-  }else{
-      alert("No fueron ingresadas las notas");
-  }
-  
+} else {
+    alert("No fueron ingresadas las notas");
+}
+

@@ -32,7 +32,7 @@ do {
                         mayorValor= dato;
                     }
                 }else {
-                    alert("la opción ingresada no es un número")
+                    alert("la opción ingresada no es un número");
                 }
 
                 break;
@@ -44,7 +44,7 @@ do {
 
 
     } else {
-        alert("la opción ingresada no es un número que corresponde a una opcion válida")
+        alert("la opción ingresada no es un número que corresponde a una opcion válida");
     }
 
 
