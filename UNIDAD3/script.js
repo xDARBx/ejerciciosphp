@@ -41,6 +41,74 @@ function Vocal(letra) {
 
 Vocal()
 
+/*18. Se le solicita al usuario que ingrese los extremos de un rango numérico y un número. 
+Realice un programa para informar si el número está dentro del rango.
+Si está en rango, informar si el número es par.
+Si no está dentro del rango, informar si el número es impar.
+Tenga en cuenta que el rango debe tener una diferencia mínima de 5 números enteros.*/
+if (extremoSuperior - extremoInferior < 5) {
+    alert("La diferencia mínima del rango debe ser de al menos 5 números enteros.");
+} else {
+    if (numero >= extremoInferior && numero <= extremoSuperior) {
+        if (numero % 2 === 0) {
+            alert("El número es par.");
+        } else {
+        alert("El número es impar.");
+        }
+    } else {
+        alert("El número está fuera de rango.");
+    }
+}
+
+/*19. Se le solicita al usuario que ingrese dos números y un operador (+, -, *, /). Realice un programa para calcular e informar 
+la operación solicitada entre ambos números. */
+var numero1 = parseFloat(prompt("Ingresa el primer número:"));
+var numero2 = parseFloat(prompt("Ingresa el segundo número:"));
+var operador = prompt("Ingresa un operador (+, -, *, /):");
+var resultado;
+
+switch (operador) {
+    case "+":
+        resultado = numero1 + numero2;
+        break;
+    case "-":
+        resultado = numero1 - numero2;
+        break;
+    case "*":
+        resultado = numero1 * numero2;
+        break;
+    case "/":
+        if (numero2 !== 0) {
+            resultado = numero1 / numero2;
+        } else {
+            alert("No se puede dividir por cero.");
+        }
+        break;
+    default:
+        alert("Ingrese un operador válido.");
+        break;
+}
+
+if (resultado !== undefined) {
+    alert("El resultado de la operación es: " + resultado);
+}
+
+
+/*20. Se le solicita al usuario que ingrese los tres lados de un triángulo. Realice el algoritmo para informar si el triángulo 
+es equilátero, isósceles o escaleno.*/
+var lado1 = parseFloat(prompt("Ingresa el valor del lado 1:"));
+var lado2 = parseFloat(prompt("Ingresa el valor del lado 2:"));
+var lado3 = parseFloat(prompt("Ingresa el valor del lado 3:"));
+
+if (lado1 === lado2 && lado1 === lado3 && lado2 === lado3) {
+    alert("Es un triángulo equilátero");
+} else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
+    alert("Es un triángulo isósceles");
+} else {
+    alert("Es un triángulo escaleno");
+}
+
+
 // -----------------------------------------------------------------------------------------------------------------------
 //Ejercicio 21
 /*21.Realizar un sistema para el cálculo de sueldo de una empresa. Se le solicita al
